@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomIconsAppBar extends StatelessWidget {
-  const CustomIconsAppBar({Key? key}) : super(key: key);
+  const CustomIconsAppBar({Key? key, required this.icon}) : super(key: key);
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class CustomIconsAppBar extends StatelessWidget {
         onPressed: () {
 
         },
-        icon: Icon(Icons.search,),
+        icon: Icon(icon,),
       ),
     );
   }
